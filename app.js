@@ -1,10 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const MongoClient = require('mongodb').MongoClient;
 
-mongoose.connect('mongodb://localhost:27017/codeTest', {
+mongoose.connect('mongodb+srv://admin:Avk@l9961@cluster0-5hupr.mongodb.net/test?retryWrites=true', {
 	autoReconnect: true,
 	reconnectTries: 60,
-	reconnectInterval: 10000
+	reconnectInterval: 10000,
+	useNewUrlParser: true
 });
 
 const app = express();
