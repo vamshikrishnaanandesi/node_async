@@ -1,6 +1,5 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const MongoClient = require('mongodb').MongoClient;
 
 mongoose.connect('mongodb+srv://admin:Avk@l9961@cluster0-5hupr.mongodb.net/test?retryWrites=true', {
 	autoReconnect: true,
